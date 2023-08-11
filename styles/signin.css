@@ -1,0 +1,65 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+  }
+  /* navbar */
+  .container {
+    position: relative;
+    top: 10vh;
+  }
+  .home {
+    position: relative;
+    left: 90vh;
+    bottom: 5vh;
+  }
+
+  .nav {
+    width: 10%;
+    height: 50px;
+    margin: auto;
+    width: 30%;
+    text-align: center;
+    background-color: #FBA618;
+    border-radius: 2%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  a {
+    margin: auto;
+    font-size: 30px;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  #signin {
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #FBA618;
+    border-radius: 2%;
+  }
+  #email, #password, #sub {
+    border-radius: 2%;
+    font-size: 20px;
+  }
+  form {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    
+  }
+  input {
+    width: 95%;
+    height: 50px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: black;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(0, 0, 0, 0.15) 0px 0px 0px 1px;
+  }
+  #sub {
+    width: 30%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+  }

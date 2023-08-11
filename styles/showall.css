@@ -1,0 +1,229 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#header {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+#hello {
+    position: relative;
+    left: 8%;
+}
+/* signin signout dropdown */
+.signin-dropdown {
+    position: relative;
+    display: inline-block;
+}
+.signin-dropdown-contents {
+    display: none;
+    position: absolute;
+    background-color: #F6F9F7;
+    min-width: 120px;
+    z-index: 1;
+}
+.signin-dropdown-contents a {
+    display: block;
+    color: black;
+    font-size: 14px;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+.signin-dropdown:hover .signin-dropdown-contents{
+    display: block;
+    
+}
+.signin-btn {
+    border: none;
+    background-color: white;
+}
+/* dropdown */
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    text-decoration: none;
+}
+.dropdown-items a {
+    color: black;
+    font-size: 14px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-items {
+    display: none;
+    position: absolute;
+    background-color: #F6F9F7;
+    min-width: 120px;
+    z-index: 1;
+    }
+.dropdown:hover .dropdown-items {
+    display: block;
+}
+.dropdown a {
+    text-decoration: none;
+    color: black;
+}
+/* navbar */
+.navbar {
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+#nav-items {
+    width: 80%;
+    height: 110%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+}
+.img-logo {
+    width: 60px;
+    position: relative;
+    height: 100%;
+    /* position: relative;
+    right: 80px; */
+}
+.nav-member{
+    
+    width: 200px;
+    position: relative;
+    left: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-member > a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+.searchBar {
+    width: 350px;
+    position: relative;
+    left: 60px;
+}
+.searchBar > input {
+    width: 90%;
+    position: relative;
+    top: 25%;
+    left: 10%;
+    height: 55%;
+}
+.more-icons {
+    display: flex;
+    width: 20%;
+    margin: auto;
+    justify-content: space-evenly;
+    position: relative;
+    left: 60px;
+}
+.more-icons > a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+.counter {
+    position: relative;
+    right: 10px;
+    bottom: 12px;
+    background-color: #FBA618;
+    border-radius:20px;
+    padding: 5%;
+}
+.more-icons h4 {
+    text-align: center;
+}
+.yellow {
+    background-color: #FBA618;
+    font-size: 12px;
+    height: 25px;
+    text-align: center;
+    position: relative;
+    z-index: 20;
+}
+/* container */
+#container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: auto;
+    gap: 10px;
+}
+.card {
+    border: 22px solid red;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.textArea {
+    line-height: 11px;
+    padding: 3%;
+}
+.textArea > .name {
+    font-size: 15px;
+}
+.textArea > .brand {
+    font-size: 12px;
+    color: #FAA619;
+    position: relative;
+}
+.favbtn {
+    border-radius: 500px;
+    position: absolute;
+    float: right;
+    opacity: 0.7;
+    left: 82%;
+    top: 2%;
+}
+
+.cartBtn {
+    position: relative;
+    background-color: #FAA619;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    width: 95%;
+    margin: auto;
+    bottom: 2%;
+}
+.image {
+    width: 100%;
+}
+/* filter and sort */
+.filterAndSort {
+    width: 80%;
+    position: relative;
+    left: 9%;
+    margin: 30px;
+}
+.filterAndSort select {
+    background-color:#FAA619;
+    border: none;
+    border-radius: 2px;
+    padding : 3px;
+    color: #F6F9F7;
+}
+.filterAndSort option {
+    background-color: white;
+    color: black;
+}
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    #container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-auto-rows: auto;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 1020px) {
+    #container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: auto;
+    }
+}

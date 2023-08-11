@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopKaroo - Men Product</title>
+    <link rel="icon" type="image/png" href="Images/BuyKarooLogo.png">
+    <link rel="stylesheet" href="styles/buy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <nav id="header" class="navbar">
+        <div id="nav-items">
+            <div class="logo">
+                <a href="index.html"><img class="img-logo" src="Images/BuyKarooLogo.png" alt="logo"></a>
+            </div>
+            <div class="nav-member">
+                <div class="dropdown">
+                    <a class="anchor" href="women.html">Women</a>
+                    <div class="dropdown-items">
+                        <a href="womenProduct.html?category=Jeans">Jeans</a>
+                        <a href="womenProduct.html?category=Saree">Saree</a>
+                        <a href="womenProduct.html?category=Shirt">Shirt</a>
+                        <a href="womenProduct.html?category=Kurta">Kurta</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="anchor" href="men.html">Men</a>
+                    <div class="dropdown-items">
+                        <a href="menProduct.html?category=Jeans">Jeans</a>
+                        <a href="menProduct.html?category=Shirts">Shirts</a>
+                        <a href="menProduct.html?category=Sweatshirt">Sweatshirt</a>
+                        <a href="menProduct.html?category=T-Shirts">T-Shirt</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="anchor" href="kids.html">Kids</a>
+                    <div class="dropdown-items">
+                        <a href="kidsProduct.html?category=Frocks">Frocks</a>
+                        <a href="kidsProduct.html?category=Pants">Pants</a>
+                        <a href="kidsProduct.html?category=T-Shirt">T-Shirt</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="anchor" href="#">Beauty</a>
+                    <div class="dropdown-items">
+                        <a href="">Coming Soon...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="searchBar">
+                <input type="text" id="dataSearch" placeholder=" What are you looking for ?">
+            </div>
+            <div class="more-icons">
+                <h6>More  |</h6>
+                <div class="signin-dropdown">
+                    <!-- <a class="sign-in" href=""><i class="fa-regular fa-user"></i></a> -->
+                    <button class="signin-btn"><i class="fa-regular fa-user"></i></button>
+                    <div class="signin-dropdown-contents">
+                        <a id="signin" href="signin.html">Sign In</a>
+                        <a id="signup" href="signup.html">Sign Up</a>
+                        <a id="logout" href="signin.html">LogOut</a>
+                    </div>
+                </div>
+                <a href="fav.html"><i class="fa-solid fa-heart"></i></a>
+                <a href="cart.html"><span class="material-symbols-outlined">
+                    shopping_bag
+                    </span></a>
+                <!-- <p class="counter"></p> -->
+            </div>
+            <h5 id="hello"></h5>
+        </div>
+    </nav>
+    <h4 class="yellow">Now Live | Biggest Sale Of The Year ></h4>
+    <div class="filter"></div>
+    <!-- <div class="filterAndSort">
+        <div class="filter">
+        <select name="filterCat" id="filterCat">
+                <option value="showAll">Filter with category</option>
+                <option value="Kurta">Kurta</option>
+                <option value="Jeans">Jeans</option>
+                <option value="Saree">Saree</option>
+                <option value="Shirt">Shirt</option>
+            </select>
+            <select name="filterBrand" id="filterBrand">
+                <option value="showAll">Filter Brands</option>
+                <option value="AVAASA MIX N' MATCH">AVAASA MIX N' MATCH</option>
+                <option value="Ketch">Ketch</option>
+                <option value="Gorgone">Gorgone</option>
+                <option value="SOCH">SOCH</option>
+                <option value="LEVIS">LEVIS</option>
+                <option value="Puma">Puma</option>
+                <option value="WRANGLER">WRANGLER</option>
+                <option value="U.S. Polo Assn.">U.S. Polo Assn.</option>
+            </select>
+            <select name="sortby" id="sortBy">
+                <option value="showAll">Sort by Price</option>
+                <option value="l2h">Low-to-High</option>
+                <option value="h2l">High-to-Low</option>
+            </select>
+            <button id="reset">reset</button>
+        </div>
+    </div> -->
+    <div class="total-container">
+        <div id="container">
+        </div>
+        <div class="billing-items">
+            <div class="billing" id="billSec">
+                <u><h4 style="text-align: center; ">Total Bill</h4></u>
+                <hr style="border: 1px solid black;">
+                <h6>Clothing Amount. : <h6 id="clthBill"></h6></h6>
+                <h6>GST + Taxes (12%): <h6 id="taxBill"></h6></h6>
+                <h6>convenience charge: <h6 id="conviBill"></h6></h6>
+                <hr>
+                <h5>Total Bill : <h5 id="totalBill"></h5></h5>
+            </div>
+            <button id="buyNow" >Checkout</button>
+        </div>
+        
+    </div>
+    
+    
+</body>
+<script src="scripts/buy.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</html>
